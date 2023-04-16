@@ -1,0 +1,208 @@
+/*-----Dafont-----*/
+
+ @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,600;0,800;1,700;1,800&display=swap');
+
+
+/*-----colors-------*/
+
+:root{
+    --primary:#f70404;
+    --primary-dark:#f30000;
+    --black:#010101;
+    --gray-1:#fa0808;
+    --gray-2:#f70c0c;
+    --body:#fefefe;
+}
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--body);
+}
+
+
+btn{
+    border-radius: 8px;
+}
+
+.btn-danger,
+.btn-outline-danger{
+    padding: 12px  20px;
+}
+
+.btn-danger{
+    background-color: var(--primary);
+}
+.btn-danger:hover{
+    background-color: var(--primary-dark);
+}
+.btn-outline-danger{
+    border: 1px solid  var(--gray-2);
+    color: var(--black);
+}
+.btn-outline-danger:hover{
+    background-color: var(--gray-2);
+    border: 1px solid  var(--gray-2);
+    color: var(--black);
+}
+
+.btn-outline-danger:focus{
+    background-color: var(--gray-2);
+    border: 1px solid  var(--gray-2);
+    color: var(--black);
+}
+
+
+
+.navbar .btn-outline-danger{
+    border: 1px solid var(--gray-2);
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 10px 16px;
+}
+.navbar{
+    padding: 32px 0;
+}
+.nav-link{
+    margin-left: 41px;
+    font-size: 16px;
+
+}
+.navbar-nav .nav-link.active{
+    font-weight: bold;
+    color: var(--black);
+}
+
+section.hero{
+    padding:  80px  0;
+}
+section.hero .text{
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 73px;
+    color: var(--black);
+}
+.buttons{
+    padding-top: 69px;
+}
+.buttons .btn{
+    font-size:16px;
+    font-weight: bold;
+    line-height: 24px;
+}
+.icons img{
+    width: 10%;
+}
+section.setup{
+    padding: 20px 0;
+}
+section.setup .text-header h3{
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 48px;
+        color: var(--black);
+}
+section.setup .text-header p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--gray-1);
+    padding: 10px 0;
+}
+section.setup .icons{
+    padding: 27px 0;
+}
+section.setup h5{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--black);
+    padding-bottom: 18px;
+}
+
+section.setup .desc p{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    max-width: 284px;
+    margin: 0 auto;
+}
+section.information .text-information{
+    padding: 134px 0;
+}
+section.information h5{
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 48px;
+    color: var(--black);
+}
+
+section.information p{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;
+    color: var(--black);
+    padding-top: 20px;
+}
+
+
+section.information .info-1{
+    padding: 22px 0;
+}
+footer{
+    padding-top: 9px;
+    margin-bottom: 44px;
+    text-align: center;
+}
+footer a{
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--black);
+    line-height: 18px;
+    text-align: center;
+    
+
+    
+}
+footer .copy{
+    margin-top: 32px;
+    font-size: 14px;
+    color: var(--gray-1);
+    line-height: 17px;
+    font-weight: 400;
+    text-align: center;
+}
+@media (max-width:576px){
+
+    section.hero,
+    section.setup,
+    section.information{
+     text-align: center;
+    }   
+    
+    .navbar{
+        padding: 20px 0;
+    }
+    .nav-link{
+        margin-left: 0;
+    }
+    section.hero,
+    section.setup,
+    section.information{
+        text-align: center;
+    }   
+    section.hero img{
+        padding-top: 2.5rem;
+    }
+  
+    .buttons .btn{
+        display: block;
+        margin: 1rem 0;
+    }
+    .buttons .btn-outline-danger{
+        margin-left: 0px !important;
+    }
+    section.setup{
+        padding: 50px 0;
+    }
+}
